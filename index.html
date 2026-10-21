@@ -1,0 +1,41 @@
+<div class="text-center mb-8" id="headerForm">
+    <div class="w-12 h-12 bg-indigo-600 rounded-2xl mx-auto flex items-center justify-center mb-4 shadow-lg shadow-indigo-200 transition-transform hover:scale-105">
+        <i data-lucide="zap" class="text-white w-6 h-6"></i>
+    </div>
+    <h1 class="text-2xl font-semibold tracking-tight text-slate-900">Acesso Antecipado</h1>
+    <p class="text-sm text-slate-500 mt-2">Registe-se para aceder ao sistema.</p>
+</div>
+
+<!-- Formulário Original -->
+<form id="leadForm" class="space-y-4 transition-all duration-500">
+    <div>
+        <label class="block text-xs font-medium text-slate-500 mb-1 ml-1">Nome Completo</label>
+        <div class="relative">
+            <i data-lucide="user" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400"></i>
+            <input type="text" id="nome" required class="w-full pl-10 pr-4 py-3 bg-white/50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all placeholder-slate-400 text-sm" placeholder="O seu nome">
+        </div>
+    </div>
+    <div>
+        <label class="block text-xs font-medium text-slate-500 mb-1 ml-1">WhatsApp</label>
+        <div class="relative">
+            <i data-lucide="phone" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400"></i>
+            <input type="tel" id="whatsapp" required class="w-full pl-10 pr-4 py-3 bg-white/50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all placeholder-slate-400 text-sm" placeholder="(00) 00000-0000">
+        </div>
+    </div>
+    <button type="submit" class="w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+        <span>Garantir Acesso</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+    </button>
+</form>
+
+<!-- Tela de Sucesso Oculta -->
+<div id="successState" class="hidden flex-col items-center justify-center py-6 text-center animate-[fade-in_0.5s_ease-out]">
+    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 animate-[bounce_1s_ease-in-out]">
+        <i data-lucide="check-circle-2" class="w-8 h-8 text-green-600"></i>
+    </div>
+    <h2 class="text-xl font-semibold text-slate-900 mb-2">Tudo Certo!</h2>
+    <p class="text-sm text-slate-500 mb-6">Os seus dados foram gravados localmente. Verifique o LocalStorage.</p>
+    <button id="btnReset" class="text-sm font-medium text-indigo-600 hover:text-indigo-700 transition-colors">
+        Fazer novo teste
+    </button>
+</div>

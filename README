@@ -1,0 +1,12 @@
+# Lumina UI Boilerplate 🚀
+
+Bem-vindo ao Lumina UI! Um kit de interface ultra-leve, com design minimalista (Apple HIG) e pronto para captura de leads.
+
+## Como utilizar:
+1. Faça o upload de todos os ficheiros para o seu servidor (ex: Hostinger, cPanel, ou VPS).
+2. O sistema funciona sem necessitar de instalar frameworks complexos. Utiliza PHP nativo e a base de dados SQLite é gerada automaticamente.
+3. Para visualizar, basta aceder ao diretório onde colocou os ficheiros no seu navegador.
+4. Os dados capturados no formulário são guardados automaticamente no ficheiro `api/leads.sqlite`.
+
+## Integrações Avançadas:
+Se pretender integrar com sistemas de automação de WhatsApp ou Webhooks, basta editar o ficheiro `api/captura.php` e adicionar a sua chamada cURL após a inserção na base de dados.
